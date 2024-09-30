@@ -174,7 +174,9 @@ button:hover {
     align-items: center;
     flex-direction: column;
   }
-  
+  .contact p{
+    font-size: 1.5rem;
+  }
   /* Social Icons Styles*/
   
   .social-icons {
@@ -275,8 +277,8 @@ button:hover {
   }
 
   .projects {
-    height: auto; /* Auto for Mobile Use*/
-    background: radial-gradient(#f4f2f2, rgba(209,227,221,0.6));
+    height: auto; /* Auto for Mobile Use radial-gradient(#f4f2f2, rgba(209,227,221,0.6));*/
+    background: white;
     padding: 20px;
   }
   
@@ -299,7 +301,7 @@ button:hover {
   .project {
     display: block;
     width: 25%;
-    background-color:white;
+    background-color: rgba(209,227,221,0.6);
     color: black;
     margin: 10px;
     box-shadow: 0px 2px 2px rgba(156, 153, 153, 0.5);
@@ -315,8 +317,8 @@ button:hover {
   and makes it have a bounce effect*/
   .project:hover {
     transform: scale(0.95);
-    box-shadow: 0px 5px 65px rgba(255, 255, 255, 0.5);
-    background-color: rgba(78, 85, 90, 0.1);
+    box-shadow: 0px 5px 65px rgba(85, 82, 82, 0.5);
+    background-color: rgba(166, 175, 181, 0.1);
 
   }
 
