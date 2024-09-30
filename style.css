@@ -1,0 +1,444 @@
+/* Global Styles */
+
+
+body {
+    font-family: "Manrope", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(209,227,221,0.6); 
+  }
+  
+  .nameBlinking h1 {
+    padding-top: 70px;
+    font-size: 3rem;
+    overflow: hidden; /* Hides content during typing */
+    border-right: 0.05em solid black;
+    white-space: nowrap; /* Prevents text wrapping */
+    margin: 0 auto; /* Centers the element */
+    animation: typing 2.5s steps(15, end), blink 0.75s step-end infinite; /* Typing and blinking cursor animations */
+    display: inline-block; /* Makes the element's width fit the content */
+    font-weight: normal;
+  }
+  
+  /* Typing effect keyframe */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 15ch; } /* Adjust this to match the number of characters in your header */
+  }
+  
+  /* Blinking cursor effect */
+  @keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Makes navbar background black transparent, makes it stick to the screen when we scroll down 
+  and makes it fill the whole width of the screen*/
+  .navbar {
+    position: fixed; /* Stick to the top of the screen */
+    top: 0; /* 0 pixels away from the top of the screen*/
+    left: 0; /* 0 pixels away from the left of the screen */
+    width: 100%; /* Fill the whole width of the screen */
+    padding: 10px; /* Adds padding to the navbar */
+    z-index: 1000; /* Makes the navbar on top of everything */
+    transition: background-color 0.3s ease; /* Smooth transition when scrolling */
+    background-color: #393E41;
+  }
+  
+  /* Makes the navbar item color white and removes the underline from the navbar items*/
+  .navbar a {
+    color: white; /* White text color */
+    margin-right: 20px; /* Adds space between the navbar items */
+    text-decoration: none; /* Removes underline from the navbar items */
+  }
+  
+  /* When hovering over the color changes to the one specified*/
+  .navbar a:hover {
+    color: #ccc; /* Light grey color when hovering */
+    text-decoration: none; /* Removes underline when hovering */
+  }
+  
+  /* CSS for when navbar gets scrolled then a transparent black background aoppears
+  This is used with the javascript in this project
+  */
+  .navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-black background when scrolled */
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Individual circular content boxes */
+  .box {
+    width: 200px; /* Set the width of the box */
+    height: 200px; /* Set the height of the box */
+    overflow: hidden; /* Ensures anything outside the box is hidden */
+    display: flex; /* Center the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    border-radius: 50%; /* Makes the box round */
+    border: 2px solid #000; /* Optional: Add a border */
+  }
+  
+  .box img {
+    width: 100%; /* Make the image take the full width */
+    height: 100%; /* Make the image take the full height */
+    object-fit: cover; /* Ensures the image covers the box */
+    border-radius: 50%; /* Make the image round */
+    
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (min-width: 600px) {
+    .box {
+      flex: 1 1 45%;
+      max-width: 200px; /* Ensure max-width remains the same */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .box {
+      flex: 1 1 30%;
+      max-width: 200px; /* Ensure max-width remains the same */
+    }
+  }
+
+.blueButtons a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Base button styles */
+.blueButtons button {
+    border-radius: 50px;
+    background-color: #0496FF; /* Changed to a solid blue for better contrast */
+    border: none; /* Removed the border */
+    color: #FFFFFF;
+    padding: 0.8em 1.5em; /* Adjusted padding for better button shape */
+    font-size: 1rem; /* Base font size */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: inline-block; /* Ensure buttons stack properly */
+    cursor: pointer;
+    margin-bottom: 10px; /* Space between buttons */
+}
+
+/* Hover effect */
+button:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+    background-color: #0381d1; /* Darker shade on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow for hover */
+}
+  
+  /* Flexible images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  .contact {
+    color: black;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+  }
+  
+  .contact h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+  
+  /* Makes the content div smaller  */
+  .contact .content {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Social Icons Styles*/
+  
+  .social-icons {
+    text-align: center;
+    margin-top: 20px;
+
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+  }
+  
+  .social-icons img {
+    width: auto;
+    height: 30px;
+    filter: grayscale(100%); /* Makes the image black and white */
+  }
+/* About Section */
+.about {
+  color: rgb(0, 0, 0);
+   /* 70% of the screen height */
+  text-align: center; /* Centers the text */
+  display: flex; /* Makes the items flex which means that they stack on top of each other or left to right */
+  align-items: center; /* Centers the items vertically */
+  justify-content: center; /* Centers the items horizontally */
+  background-color: #FFFFFF;
+}
+
+/* Font size for h1 and p tags */
+.about h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.about p {
+  font-size: 1.2rem;
+}
+
+/* Makes the text and profile image flex and aligns items in the center */
+.about .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Makes the items get spaced with the white space in between them */
+  height: 80%;
+  width: 80%;
+}
+  /*EXPERIENCE SECTION */
+  .experience {
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  /* Font size for h1 tag and adds space below*/
+  .experience h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: normal;
+  }
+  
+  /* Makes the experience items flex and centers them */
+  .experience-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Adds even spacing and make them uniform  */
+  .experience-item {
+    width: calc(33.333% - 150px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Image size and makes it so it doesnt go over the div size */
+  .experience-item img {
+    max-width: 130px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  /* Font size for h2 and p tags */
+  .experience-item h2 {
+    font-size: 1.3em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .experience-item p {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .projects {
+    height: auto; /* Auto for Mobile Use*/
+    background: radial-gradient(#f4f2f2, rgba(209,227,221,0.6));
+    padding: 20px;
+  }
+  
+  /* Font size for h1 tag and color white */
+  .projects h1 {
+    color:rgb(4,150,255);
+    text-align: center;
+    font-weight: normal;
+  }
+  
+  /* Adds flex and spacing between the different projects*/
+  .project-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Project card styling and makes it in a grid like format */
+  .project {
+    display: block;
+    width: 25%;
+    background-color:white;
+    color: black;
+    margin: 10px;
+    box-shadow: 0px 2px 2px rgba(156, 153, 153, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+      background-color 0.3s ease;
+    transform: scale(1);
+  }
+  
+  /* Hover effect for the project card 
+  and makes it have a bounce effect*/
+  .project:hover {
+    transform: scale(0.95);
+    box-shadow: 0px 5px 65px rgba(255, 255, 255, 0.5);
+    background-color: rgba(78, 85, 90, 0.1);
+
+  }
+
+  
+  /* Image size and border radius */
+  .project img {
+    width: auto;
+    height: 180px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  /* Inner padding for the project text */
+  .project p {
+    padding: 0 10px 20px;
+  }
+  @media (min-width: 1024px) {
+    .box {
+        width: 200px;
+        height: 200px;
+    }
+
+    .project {
+        width: 25%; /* Larger cards on laptops */
+    }
+
+    .about .content {
+        width: 70%; /* More space on laptops */
+    }
+
+    .experience-item {
+        width: calc(33.333% - 100px); /* Spacing for wider screens */
+    }
+}
+
+/* For Tablets and Smaller Laptops */
+@media (max-width: 1024px) {
+    .nameBlinking h1 {
+        font-size: 2.5rem; /* Slightly smaller for tablets/smaller laptops */
+    }
+
+    .box {
+        width: 150px; /* Resize boxes for smaller laptop screens */
+        height: 150px;
+    }
+
+    .project {
+        width: 40%; /* Adjust project card width */
+    }
+
+    .experience-item {
+        width: calc(33.333% - 100px); /* Adjust experience items */
+    }
+
+    .contact .content, .about .content {
+        width: 80%; /* Ensure content fits well */
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .nameBlinking h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .container {
+        flex-direction: column; /* Stack boxes vertically */
+    }
+
+    .box {
+
+        width: 100px; /* Smaller box for mobile */
+        height: 100px;
+        margin: 0 auto; /* Center the box itself */
+        overflow: hidden; /* Ensures anything outside the box is hidden */
+        display: flex; /* Center the content */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        border-radius: 50%; /* Makes the box round */
+        border: 2px solid #000; /* Optional: Add a border */
+    
+    }
+
+    .blueButtons button {
+        width: auto; /* Change to auto width for slimmer buttons */
+        max-width: 80%; /* Set a maximum width for better sizing */
+        padding: 0.5em 1em; /* Adjust padding for a more compact button */
+        font-size: 1.2rem; /* Keep larger font for readability */
+        margin: 10px auto; /* Add margin for spacing between buttons and center them */
+    
+  }
+
+    .project-row {
+        flex-direction: column; /* Stack projects vertically */
+        align-items: center;
+    }
+
+    .project {
+        width: 90%; /* Full-width for mobile */
+    }
+
+    .contact .content, .about .content {
+        width: 90%; /* Take up more space on mobile */
+    }
+
+    .experience-item {
+        width: 90%; /* Full-width for mobile */
+    }
+}
+
+/* For Very Small Screens */
+@media (max-width: 400px) {
+    .nameBlinking h1 {
+        font-size: 1.5rem; /* Further reduced for small screens */
+    }
+
+    .box {
+        width: 80px; /* Even smaller boxes for small screens */
+        height: 80px;
+    }
+
+    .project {
+        width: 95%; /* Almost full-width for small screens */
+    }
+}

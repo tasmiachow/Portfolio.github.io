@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+  <title>Tasmia Chowdhury</title>
+  
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!--Link to Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <!-- Navbar Items created with anchor links
+    #'s are used to create links within the same webpage. 
+    followed by an ID attribute of an HTML element
+    when a user clicks on a link the browser will scroll to the viewport 
+    of the section with this id 
+    Can also link to a different HTML page -->
+    <a href="#about-me">About Me</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <div class="nameBlinking">
+      <h1>Tasmia Chowdhury</h1>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="box">
+      <img src="images/tmia.jpg" alt="Tasmia">
+    </div>
+  </section>
+  <h2 style="color:#FFBC42; font-size: 1.7rem;">Software Engineer</h2>
+
+  <div class ="blueButtons">
+    <a href="#about-me"><button>About</button></a>
+    <a href="#experience"><button>Experience</button></a>
+    <a href="Tasmia_C_2024.pdf" target="_blank"><button>Resume</button></a>
+  </div>
+  <br><br>
+  <div class="about" id="about-me">
+    <!-- About me content container-->
+    <div class="content">
+      <!-- Profile Image -->
+
+      <!-- About me Text -->
+      <div class="text">
+        <h1>About Me</h1>
+        <!-- Mention your college, major, interests, hobbies -->
+        <p>
+           Hunter College <br />
+          <span style="font-size:0.9rem;">Major: Computer Science </span><br />
+          <span style="font-size:0.9rem;">Minor: Applied Mathematics </span>
+          <br /><br />
+          A dedicated computer science student at Hunter College who continuously applies her skillset in 
+          theoretical concepts and practical applications. As a Program Administrator at Digital Girl, Inc. 
+          I've demonstrated leadership, creative thinking, and collaboration to foster inclusive learning environments. 
+          I possess the ability to distill complex technical concepts into accessible, engaging lessons to inspire a diverse cohort of 
+          young learners.Beyond my administrative role, I've interned in the financial tech industry and implemented agile 
+          methodologies to create valuable scripts for the Risk, 
+          Finance, and Treasury Teams at a Fortune 500 investment bank.
+        </p>
+        <!-- Another button linking to your resume -->
+        
+      </div>
+    </div>
+  </div>
+
+<br>
+ <!-- Experience container -->
+ <div class="experience" id="experience">
+  <h1>Experience</h1>
+  <!-- Experience content container -->
+  <div class="experience-container">
+    <!-- Experience Items
+    Feel free to delete or add more experiences -->
+    <div class="experience-item">
+      <!-- Experience image -->
+      <img src="images/barclays.png" alt="Barclays" />
+      <!-- Company -->
+      <h2>Barclays Investment Bank</h2>
+      <!-- Role and date employed -->
+      <p>Data Engineer Intern<br />2023</p>
+    </div>
+
+    <div class="experience-item">
+      <img src="images/google.png" alt="Google" />
+      <h2>Google</h2>
+      <p>SWE Fellow<br />2023</p>
+    </div>
+
+    <div class="experience-item">
+      <img src="images/dgi.png" alt="Digital Girl, Inc." />
+      <h2>Digital Girl, Inc.</h2>
+      <p>Program Administrator & Lead Instructor <br />2018-2024</p>
+    </div>
+    <!-- Add other experiences here using the same structure -->
+  </div>
+  <div class="blueButtons"> <a href="Tasmia_C_2024.pdf" target="_blank"><button>Resume</button> </a></div>
+</div>
+
+
+<br> 
+<!--Project container -->
+<div class="projects" id="projects">
+  <h1 style="font-size:2.5em; color:black">Projects</h1>
+  <!-- Project content container -->
+  <div class="content">
+    <!-- Project Row 1 -->
+    <div class="project-row">
+      <!-- Project Link -->
+      <a href="https://github.com/tasmiachow/Capstone" class="project">
+        <!-- Project Image -->
+        <img src="images/Hands.png" alt="Hands2Words" />
+        <h1>Hands2Words</h1>
+        <!-- Project Description -->
+        <p>A machine learning-based web application that processes live video streams of ASL gestures 
+          and translates them into English text in real time.</p>
+      </a>
+
+      <!-- Add other projects here using the same structure -->
+
+      <a href="https://project.com" class="project">
+        <img src="images/library.jpg" alt="Library API" />
+        <h1>Library API </h1>
+        <p>An object-oriented program using C++</p>
+      </a>
+    </div>
+
+    <!-- Project Row 2 -->
+    <div class="project-row">
+      <a href="https://github.com/Dewiin/DTM_CTP2024" class="project">
+        <img src="images/acne.png" alt="BlemishBot"/>
+        <h1>Acne Classifer</h1>
+        <p>Developing a machine learning model for classifying different types of acne from 
+          images, providing personalized treatment recommendations based on the identified skin condition.</p>
+      </a>
+
+    </div>
+  </div>
+</div>
+  
+  
+  <br>
+  <footer>
+    <div class="contact" id="contact">
+        <!-- Contact content container-->
+        <div class="content">
+          <h1>Contact Me</h1>
+          <!-- Contact Section title -->
+          <!-- Contact Section Description -->
+          <p>
+           
+            <a href="mailto:tasmiachowdhury123@gmail.com" style="text-decoration:none;color:rgb(4,150,255);">tasmiachowdhury123@gmail.com</a>
+          </p>
+
+          <!-- Social Media Links 
+          https://www.flaticon.com/ -->
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/tasmiachow/" target="_blank">
+              <img src="./SocialMedia/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/tasmiachow" target="_blank">
+              <img src="./SocialMedia/github.png" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+</body>
+</html>
