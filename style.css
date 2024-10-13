@@ -11,6 +11,7 @@ body {
     box-sizing: border-box;
     text-align: center;
     background-color: rgba(209,227,221,0.6); 
+    overflow-x: hidden;
   }
   
   .nameBlinking h1 {
@@ -231,6 +232,7 @@ button:hover {
     color: black;
     text-align: center;
     padding: 50px 0;
+    
   }
   
   /* Font size for h1 tag and adds space below*/
