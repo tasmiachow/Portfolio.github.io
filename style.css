@@ -226,57 +226,97 @@ button:hover {
   height: 80%;
   width: 80%;
 }
-  /*EXPERIENCE SECTION */
-  .experience {
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    padding: 50px 0;
-    
-  }
-  
-  /* Font size for h1 tag and adds space below*/
-  .experience h1 {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    font-weight: normal;
-  }
-  
-  /* Makes the experience items flex and centers them */
+  /* EXPERIENCE SECTION */
+.experience {
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Font size for h1 tag and adds space below */
+.experience h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+
+/* Experience container - Now fully flexible */
+.experience-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping while maintaining horizontal layout */
+  gap: 20px; /* Adds spacing between items */
+}
+
+/* Experience items */
+.experience-item {
+  width: calc(33.333% - 60px); /* Slightly reduced for better spacing */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image size */
+.experience-item img {
+  max-width: 130px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+/* Font size for h2 and p tags */
+.experience-item h2 {
+  font-size: 1.3em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.experience-item p {
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE DESIGN WITHOUT STACKING */
+
+/* For Tablets and Smaller Laptops */
+@media (max-width: 1024px) {
   .experience-container {
-    display: flex;
-    justify-content: center;
+      gap: 15px; /* Adjusts spacing for smaller screens */
   }
-  
-  /* Adds even spacing and make them uniform  */
+
   .experience-item {
-    width: calc(33.333% - 150px);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      width: 45%; /* Makes each item take half the width instead of stacking */
   }
-  
-  /* Image size and makes it so it doesnt go over the div size */
-  .experience-item img {
-    max-width: 130px;
-    height: 90px;
-    object-fit: contain;
-    margin-bottom: 20px;
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+  .experience-container {
+      justify-content: space-around; /* Ensures horizontal alignment */
   }
-  
-  /* Font size for h2 and p tags */
-  .experience-item h2 {
-    font-size: 1.3em;
-    color: #333;
-    margin: 10px 0;
+
+  .experience-item {
+      width: 47%; /* Keeps two items side by side */
   }
-  
-  .experience-item p {
-    color: #666;
-    font-size: 0.9em;
-    line-height: 1.4;
+}
+
+/* For Very Small Screens */
+@media (max-width: 500px) {
+  .experience-item {
+      width: 48%; /* Keeps side-by-side layout instead of stacking */
   }
+}
+
+/* For Ultra Small Screens (optional) */
+@media (max-width: 400px) {
+  .experience-item {
+      width: 100%; /* If needed, adjusts for extra-small screens */
+  }
+}
+
 
   .projects {
     height: auto; /* Auto for Mobile Use radial-gradient(#f4f2f2, rgba(209,227,221,0.6));*/
