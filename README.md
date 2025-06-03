@@ -5,3 +5,6 @@ I'm a first-gen student aspiring to become a software engineer!
 Also, look at my favicon :D gear5
 
 Here's the finished site [My Portfolio](https://tasmiachow.github.io/Portfolio.github.io/)
+
+## ⭐ LIKE WHAT YOU SEE?
+If this project helped you or inspired you, please consider giving it a ⭐ — it really helps!
