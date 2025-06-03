@@ -217,12 +217,21 @@ button:hover {
 .about p {
   font-size: 1.2rem;
 }
-.fun-pic{
-  float: left;  /* Align image to the left */
-  margin-right: 15px; /* Add spacing between image and text */
-  border-radius: 10%; /* Make the image circular */
-  width: 150px; /* Adjust size as needed */
-  height: auto;
+.fun-pic {
+  float: left;
+  margin-right: 15px;
+  border-radius: 50%; /* Perfect circle if image is square */
+  width: 150px;
+  height: 150px; /* Optional: force circle if image isn't square */
+  object-fit: cover; /* Ensures image fills the circle properly */
+  margin-bottom: 20px; /* Base bottom spacing */
+}
+
+/* Add extra bottom padding on large screens */
+@media screen and (min-width: 1440px) {
+  .fun-pic {
+    margin-bottom: 80px; /* or more if needed */
+  }
 }
 
 /* Makes the text and profile image flex and aligns items in the center */
