@@ -174,12 +174,12 @@
           <!-- Contact Section Description -->
 
           <div class="social-icons">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tasmiachowdhury123@gmail.com&su=Hello%20Tasmia&body=Just%20wanted%20to%20reach%20out!"
-            target="_blank"
-            title="Click to email me on Gmail. Email copied to clipboard!"
+            <a href="mailto:tasmiachowdhury123@gmail.com?subject=Hello%20Tasmia&body=Just%20wanted%20to%20reach%20out!"
+            title="Click to email me. Email copied to clipboard!"
             onclick="copyEmail(event)">
-           <img src="images/email.png" alt="Email icon" id="email-icon" style="cursor:pointer;">
-         </a>
+            <img src="images/email.png" alt="Email icon" id="email-icon" style="cursor:pointer;">
+           </a>
+      
          
          <!-- Copied Message -->
          <span id="copied-msg" style="margin:10px; color:rgb(89, 133, 221); display:none;">Copied!</span>
@@ -210,18 +210,14 @@
       }
     });
     function copyEmail(event) {
-    event.preventDefault(); // Prevent immediate Gmail redirect
-    const email = 'tasmiachowdhury123@gmail.com';
-
-    navigator.clipboard.writeText(email).then(() => {
-      document.getElementById('copied-msg').style.display = 'inline';
-
-      // Allow Gmail to open after short delay
+    navigator.clipboard.writeText('tasmiachowdhury123@gmail.com').then(() => {
+      const msg = document.getElementById('copied-msg');
+      msg.style.display = 'inline';
       setTimeout(() => {
-        document.getElementById('copied-msg').style.display = 'none';
-        window.open(event.currentTarget.href, '_blank');
-      }, 500);
+        msg.style.display = 'none';
+      }, 1000);
     });
+    // Let the mailto: continue to work (don’t call event.preventDefault)
   }
   </script>
 </body>
