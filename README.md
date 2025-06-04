@@ -8,3 +8,7 @@ Here's the finished site [My Portfolio](https://tasmiachow.github.io/Portfolio.g
 
 ## ⭐ LIKE WHAT YOU SEE?
 If this project helped you or inspired you, please consider giving it a ⭐ — it really helps!
+
+## Attributions 
+Shoutout to FreePik for the email, GitHub, and LinkedIn Icon 
+<a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
