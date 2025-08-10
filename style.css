@@ -59,11 +59,12 @@ body {
     color: white; /* White text color */
     margin-right: 20px; /* Adds space between the navbar items */
     text-decoration: none; /* Removes underline from the navbar items */
+    font-size: 1.5rem;
   }
   
   /* When hovering over the color changes to the one specified*/
   .navbar a:hover {
-    color: #ccc; /* Light grey color when hovering */
+    color: #796b6b; /* Light grey color when hovering */
     text-decoration: none; /* Removes underline when hovering */
   }
   
@@ -92,7 +93,7 @@ body {
     border-radius: 50%; /* Makes the box round */
     border: 2px solid #000; 
     /* Optional: Add a border */
-    box-shadow: 0px 5px 65px rgba(28, 34, 31, 0.5);
+    /* box-shadow: 0px 5px 65px rgba(28, 34, 31, 0.5); */
   }
   
   .box img {
@@ -166,6 +167,12 @@ button:hover {
   .contact h1 {
     font-size: 2.5rem;
     font-weight: normal;
+  }
+  .contact h3 {
+    font-size: 1.5rem;
+    font-family: manrope;
+    font-weight: 600;
+    color:#243E36;
   }
   
   /* Makes the content div smaller  */
@@ -350,7 +357,9 @@ button:hover {
   .experience-container {
       justify-content: space-around; /* Ensures horizontal alignment */
   }
-
+  .navbar a{
+    font-size: 1rem;
+  }
   .experience-item {
       width: 47%; /* Keeps two items side by side */
   }
@@ -361,12 +370,18 @@ button:hover {
   .experience-item {
       width: 48%; /* Keeps side-by-side layout instead of stacking */
   }
+  .navbar a{
+    font-size: 1rem;
+  }
 }
 
 /* For Ultra Small Screens (optional) */
 @media (max-width: 400px) {
   .experience-item {
       width: 100%; /* If needed, adjusts for extra-small screens */
+  }
+  .navbar a{
+    font-size: 1rem;
   }
 }
 

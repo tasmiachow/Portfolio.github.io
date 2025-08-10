@@ -40,7 +40,7 @@
       alt="Tasmia">
     </div>
   </section>
-  <h2 style="color:#243E36; font-size: 1.7rem; font-weight: 500; font-family: Space Grotesk;" >Software Engineer</h2>
+  <h2 style="color:#243E36; font-size: 1.7rem; font-weight: 500; font-family: Montserrat;" >Software Engineer</h2>
 
   <div class ="blueButtons">
     <a href="#about-me"><button>About</button></a>
@@ -154,10 +154,10 @@
       
       
       <a href="https://github.com/Dewiin/DTM_CTP2024" class="project" target="_blank">
-        <img src="images/BlemishBot.PNG" alt="BlemishBot"/>
+        <img src="images/BlemishBotTran.png" alt="BlemishBot"/>
         <h1>BlemishBot</h1>
         <p class="proj">Finetuned a YOLOv8 model for classifying 6 different types of acne from 
-          a selfie. Providing personalized treatment recommendations based on the skin condition.</p>
+          a selfie. Providing personalized treatment recs based on findings.</p>
       </a>
 
 
@@ -174,10 +174,11 @@
           <h1>Contact Me</h1>
           <!-- Contact Section title -->
           <!-- Contact Section Description -->
+           <h3 onclick="copyEmail(event)">chowtasmia@gmail.com</h3>
           <div class="social-icons">
-            <a href="mailto:tasmiachowdhury123@gmail.com?subject=Hello%20Tasmia&body=Just%20wanted%20to%20reach%20out!"
+            <a href="mailto:chowtasmia@gmail.com?subject=Hello%20Tasmia&body=Just%20wanted%20to%20reach%20out!"
             title="Click to email me. Email copied to clipboard!"
-            onclick="copyEmail(event)">
+            onclick="copyEmail(event)" >
             <img src="images/email.png" alt="Email icon" id="email-icon" style="cursor:pointer;">
            </a>
       
@@ -216,7 +217,7 @@
       }
     });
     function copyEmail(event) {
-    navigator.clipboard.writeText('tasmiachowdhury123@gmail.com').then(() => {
+    navigator.clipboard.writeText('chowtasmia@gmail.com').then(() => {
       const msg = document.getElementById('copied-msg');
       msg.style.display = 'inline';
       setTimeout(() => {
